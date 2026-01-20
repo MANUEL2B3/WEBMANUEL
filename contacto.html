@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <!--Formulario-->
+    <form action="enviarmail.php" method="post">
+        <fieldset>
+            <legend>Dtos personales</legend>
+            Nombre:
+            <input type="text"
+            name="nombre" 
+            span class="rojo"size="38" 
+            autofocus 
+            autocomplete 
+            placeholder="Su nombre" 
+            title="Escriba su nombre para poder referirnos a usted correctamente"/><br>
+
+            Correo electrónico:
+            <input type="email"
+            name="mail"
+            size="28"
+            required
+            autocomplete
+            placeholder="nombre@servidor.com"
+            title="Escriba su correo electrónico para poder comunicarnos con Ud.lo antes posible"/><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del proyecto</legend>
+
+            Breve descripción del proyecto: <br>
+            <textarea name="descricpción"></textarea><br>
+
+            Estado actural del proyecto: <br>
+            <input type="radio"
+            name="proceso"
+            value="sinplantear"
+            checked/>
+            En fase de planificación
+
+            <input type="radio" 
+            name="proceso" 
+            value="enplanificacion" />
+            En fase de planificación
+
+            <input type="radio" 
+            name="proceso" 
+            value="enejecucion" />
+            En ejecución
+
+            <input type="radio" 
+            name="proceso" 
+            value="finalizado" />
+            Ya finalizado<p>
+
+            Presupuesto aproximado (en €):
+            <input type="number" 
+            name="presupuesto" 
+            value="1000"
+            min="150" 
+            max="30000" 
+            step="50">
+        </fieldset>
+
+        <input id="boton_enviar"
+        type="submit"
+        value="Enviar"
+
+        </fieldset>
+    </form>
+    </section><br>
+
+    <a href="index.html">Volver a la pagina principal</a>
+</body>
+</html>
